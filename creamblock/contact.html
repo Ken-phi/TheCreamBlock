@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | The Cream Block</title>
+    <meta name="description" content="Thick, cheap ice cream graham bars. Big orders and resellers welcome." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="index.html" aria-label="The Cream Block home"
+          ><img src="https://placehold.co/120x120/fff3e2/4b14c4?text=LOGO" alt="The Cream Block logo"
+        /></a>
+        <ul>
+          <li><a href="flavors.html">Graham bars</a></li>
+          <li><a href="index.html#large-orders">Large orders</a></li>
+          <li><a href="reseller.html">Resell with us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="on" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="btn" href="contact.html?type=large-order">Get a bulk quote</a>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <section class="head">
+          <h1>Order or ask</h1>
+          <p>Single bars, <b>large orders</b>, or <b>reseller</b> orders: tell us what you need.</p>
+        </section>
+        <section class="two" style="padding-bottom: 4.5rem">
+          <form data-form novalidate>
+            <label>Name <input name="name" required autocomplete="name" /></label>
+            <label>Email or phone <input name="contact" required /></label>
+            <label
+              >What's this about?
+              <select name="topic" required>
+                <option value="">Choose one</option>
+                <option value="coffee-mallows">Coffee Mallows</option>
+                <option value="magnum">Magnum</option>
+                <option value="classic-oreo">Classic Oreo</option>
+                <option value="ube-cheese">Ube Cheese</option>
+                <option value="large-order">Large order (24+ bars)</option>
+                <option value="reseller">Reseller order</option>
+                <option value="other">Other question</option>
+              </select></label
+            >
+            <label
+              >Message
+              <textarea name="message" rows="5" required placeholder="How many bars, which flavors, and the date you need them"></textarea>
+            </label>
+            <div class="msg" role="status"></div>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+          <aside class="info">
+            <h3>Find us</h3>
+            <p><b>Location:</b> Your address, City</p>
+            <p><b>Hours:</b> Mon to Sun, 10am to 8pm</p>
+            <p><b>Phone:</b> 09XX XXX XXXX</p>
+            <p>Large orders: please message us at least 3 days ahead.</p>
+          </aside>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        <p>&copy; <span id="year">2026</span> The Cream Block. Thick but cheap.</p>
+        <p><a href="reseller.html">Resell with us</a> &middot; <a href="contact.html">Contact</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

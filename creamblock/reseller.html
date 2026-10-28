@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resell with us | The Cream Block</title>
+    <meta name="description" content="Thick, cheap ice cream graham bars. Big orders and resellers welcome." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="index.html" aria-label="The Cream Block home"
+          ><img src="https://placehold.co/120x120/fff3e2/4b14c4?text=LOGO" alt="The Cream Block logo"
+        /></a>
+        <ul>
+          <li><a href="flavors.html">Graham bars</a></li>
+          <li><a href="index.html#large-orders">Large orders</a></li>
+          <li><a href="reseller.html" class="on" aria-current="page">Resell with us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn" href="contact.html?type=large-order">Get a bulk quote</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <h1>Sell the thick ones.</h1>
+            <p>Reseller prices start at 24 bars. Your customers get a bar that's actually an inch thick, and you keep the difference.</p>
+            <div class="btns"><a class="btn" href="#apply">Apply to resell</a><a class="btn ghost" href="#calc">Check your profit</a></div>
+          </div>
+          <div class="bar-stage">
+            <div class="bar">
+              <div class="g"></div>
+              <div class="c"></div>
+              <div class="g"></div>
+            </div>
+            <div class="ruler" aria-hidden="true"><span>1 in</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="pad wrap">
+        <h2>How reselling works</h2>
+        <ol class="steps">
+          <li>
+            <h3>Tell us your plan</h3>
+            <p>Store, canteen, online, or campus. Fill in the form below.</p>
+          </li>
+          <li>
+            <h3>Choose your flavors</h3>
+            <p>Mix any flavors in a 24-bar minimum order.</p>
+          </li>
+          <li>
+            <h3>Pick up cold</h3>
+            <p>We pack it ready for pickup or delivery. Bring a cooler.</p>
+          </li>
+          <li>
+            <h3>Sell and reorder</h3>
+            <p>Repeat orders stay at your tier price.</p>
+          </li>
+        </ol>
+      </section>
+      <section class="bulk pad" id="calc">
+        <div class="wrap">
+          <div>
+            <h2>Reseller discounts</h2>
+            <table class="tiers"></table>
+            <p>The discount is based on the total bars in your order, across all flavors, so you can mix freely.</p>
+            <p>Regular prices: <span data-price-list></span>.</p>
+          </div>
+          <div class="calc" data-calc="reseller"></div>
+        </div>
+      </section>
+      <section class="pad wrap">
+        <div class="two">
+          <div>
+            <h2>Good to know</h2>
+            <p><b>Minimum:</b> 24 bars per order, any flavor mix.</p>
+            <p><b>Storage:</b> keep bars frozen at -18&deg;C or colder. A chest freezer is ideal.</p>
+            <p><b>Payment:</b> add your terms here (GCash, bank transfer, cash on pickup).</p>
+            <p><b>Delivery:</b> add your area and fees here.</p>
+          </div>
+          <form id="apply" data-form novalidate>
+            <h2>Apply to resell</h2>
+            <label>Name <input name="name" required autocomplete="name" /></label>
+            <label>Phone or email <input name="contact" required /></label
+            ><label>Where will you sell? <input name="where" required placeholder="Store, school, online page..." /></label>
+            <input type="hidden" name="topic" value="reseller" /><label
+              >Bars per week (estimate) <input name="message" required inputmode="numeric"
+            /></label>
+            <div class="msg" role="status"></div>
+            <button class="btn" type="submit">Send application</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <p>&copy; <span id="year">2026</span> The Cream Block. Thick but cheap.</p>
+        <p><a href="reseller.html">Resell with us</a> &middot; <a href="contact.html">Contact</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

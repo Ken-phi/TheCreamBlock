@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Graham bars | The Cream Block</title>
+    <meta name="description" content="Thick, cheap ice cream graham bars. Big orders and resellers welcome." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav">
+        <a href="index.html" aria-label="The Cream Block home"
+          ><img src="https://placehold.co/120x120/fff3e2/4b14c4?text=LOGO" alt="The Cream Block logo"
+        /></a>
+        <ul>
+          <li><a href="flavors.html" class="on" aria-current="page">Graham bars</a></li>
+          <li><a href="index.html#large-orders">Large orders</a></li>
+          <li><a href="reseller.html">Resell with us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="btn" href="contact.html?type=large-order">Get a bulk quote</a>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <section class="head">
+          <h1>Graham bars</h1>
+          <p>Every bar is at least an inch thick. Buying 24 or more? <a href="index.html#large-orders">See bulk prices</a>.</p>
+        </section>
+        <div class="filters" role="group" aria-label="Filter flavors">
+          <button class="on" data-f="all">All</button><button data-f="classic">Classics</button><button data-f="chocolate">Chocolate</button
+          ><button data-f="specialty">Specialty</button>
+        </div>
+        <section class="grid" style="padding-bottom: 4.5rem">
+          <article class="card" id="coffee-mallows" data-cat="specialty">
+            <div class="pic">
+              <span class="tag">Best seller</span
+              ><img src="https://placehold.co/600x450/b08a6a/fff3e2?text=Coffee+Mallows" alt="Coffee Mallows graham bar" />
+            </div>
+            <div class="body">
+              <h3>Coffee Mallows Graham Bar</h3>
+              <p>Creamy coffee ice cream with colorful marshmallows.</p>
+              <div class="foot"><span class="price">PHP 15</span><a class="btn alt" href="contact.html?type=coffee-mallows">Order</a></div>
+            </div>
+          </article>
+          <article class="card" id="magnum" data-cat="chocolate">
+            <div class="pic">
+              <span class="tag">Chocolate</span><img src="https://placehold.co/600x450/3a2a2a/fff3e2?text=Magnum" alt="Magnum graham bar" />
+            </div>
+            <div class="body">
+              <h3>Magnum Graham Bar</h3>
+              <p>Chocolate-coated bar with cookies and cream inside.</p>
+              <div class="foot"><span class="price">PHP 20</span><a class="btn alt" href="contact.html?type=magnum">Order</a></div>
+            </div>
+          </article>
+          <article class="card" id="classic-oreo" data-cat="classic">
+            <div class="pic">
+              <span class="tag">Classic</span
+              ><img src="https://placehold.co/600x450/8a7a9a/fff3e2?text=Classic+Oreo" alt="Classic Oreo graham bar" />
+            </div>
+            <div class="body">
+              <h3>Classic Oreo Graham Bar</h3>
+              <p>Vanilla cream packed with Oreo crumbs.</p>
+              <div class="foot"><span class="price">PHP 13</span><a class="btn alt" href="contact.html?type=classic-oreo">Order</a></div>
+            </div>
+          </article>
+          <article class="card" id="ube-cheese" data-cat="specialty">
+            <div class="pic">
+              <span class="tag">New</span
+              ><img src="https://placehold.co/600x450/8f5fd0/fff3e2?text=Ube+Cheese" alt="Ube Cheese graham bar" />
+            </div>
+            <div class="body">
+              <h3>Ube Cheese Graham Bar</h3>
+              <p>Ube ice cream with creamy cheese.</p>
+              <div class="foot"><span class="price">PHP 15</span><a class="btn alt" href="contact.html?type=ube-cheese">Order</a></div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        <p>&copy; <span id="year">2026</span> The Cream Block. Thick but cheap.</p>
+        <p><a href="reseller.html">Resell with us</a> &middot; <a href="contact.html">Contact</a></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
